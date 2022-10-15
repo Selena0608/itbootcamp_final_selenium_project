@@ -5,10 +5,7 @@ import org.testng.annotations.Test;
 
 public class SignupTests extends BasicTest {
 
-//	Test #1: Visits the signup page
-//	Koraci: 
-//	Klik na sign up dugme iz navigacije
-//	Verifikovati da se u url-u stranice javlja /signup ruta 
+
 
 	@Test(priority = 10)
 	public void VisitsTheSignupPage() {
@@ -18,12 +15,7 @@ public class SignupTests extends BasicTest {
 		Assert.assertTrue(driver.getCurrentUrl().contains("/signup"), "/signup should be displayed in the URL");
 	}
 
-//	Test #2: Checks input types
-//	Koraci: 
-//	Klik na sign up dugme iz navigacije
-//	Verifikovati da polje za unos emaila za atribut type ima vrednost email
-//	Verifikovati da polje za unos lozinke za atribut type ima vrednost password
-//	Verifikovati da polje za unos lozinke za potvrdu za atribut type ima vrednost password
+
 
 	@Test(priority = 20)
 	public void ChecksInputTypes() {
@@ -40,20 +32,7 @@ public class SignupTests extends BasicTest {
 
 	}
 
-//	Test #3: Displays errors when user already exists
-//	Podaci: 
-//	name: Another User
-//	email: admin@admin.com
-//	password: 12345
-//	confirm password: 12345
-//	Koraci: 
-//	Klik na sign up dugme iz navigacije
-//	Verifikovati da se u url-u stranice javlja /signup ruta 
-//	Popuniti formu za registraciju podacima
-//	Klik na sign up dugme
-//	Sacekati da popu za prikaz poruke bude vidljiv
-//	Verifikovati da greska sadrzi poruku E-mail already exists
-//	Verifikovati da se u url-u stranice javlja /signup ruta 
+
 
 	@Test(priority = 30)
 	public void DisplaysErrorsWhenUserAlreadyExists() {
@@ -76,20 +55,7 @@ public class SignupTests extends BasicTest {
 		Assert.assertTrue(driver.getCurrentUrl().contains("/signup"), "/signup should be displayed in the URL");
 	}
 
-//	Test #4: Signup
-//	Podaci: 
-//	name: Ime i prezime polaznika
-//	email template: ime.prezime@itbootcamp.rs
-//	password: 12345
-//	confirm password: 12345
-//	Koraci: 
-//	Klik na sign up dugme iz navigacije
-//	Popuniti formu podacima za registraciju
-//	Klik na sign up dugme
-//	Ucitati stranicu /home
-//	Verifikovati da dijalog za obavestenje sadrzi tekst IMPORTANT: Verify your account
-//	Kliknuti na Close dugme iz dijaloga
-//	Kliknuti na logout
+
 	@Test(priority = 40)
 	public void signUp() throws InterruptedException {
 

@@ -22,14 +22,7 @@ import pages.SignupPage;
 
 public class BasicTest {
 	
-//	Osnovna klasa koju svaki test da nasledjuje. Ova klasa treba da ima:
-//		baseUrl - url stranice https://vue-demo.daniel-avellaneda.com
-//		beforeClass - gde se podesava drajver sa implicitnim cekanjem i cekanjem 
-//		za ucitavanje stranice i kreiraju svi pagevi potrebni za testiranje
-//		aftterClass - gde se gasi stranica
-//		beforeMethod - gde se pre svakog testa ucitava baseUrl stranica
-//		(za vezbanje) afterMethod - gde se kreira screenshot stranice u slucaju 
-//		da test ne prodje
+
 
 	protected WebDriver driver;
 	protected WebDriverWait wait;
@@ -62,10 +55,10 @@ public class BasicTest {
 		driver.get(baseUrl);
 	}
 	
-//	@AfterMethod
-//	public void afterMethod() {
+	@AfterMethod
+	public void afterMethod() {
 		
-//	}
+	}
 	
 	@AfterClass
 	public void afterClass() {
